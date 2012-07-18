@@ -8,12 +8,24 @@ class Tweet < ActiveRecord::Base
   belongs_to(:user)
   has_and_belongs_to_many(:categories)
   def suggested_categories
-     #String.split
-     #String.downcase
-     #text = tweeted_text.gsub(/#/,'')
+     # Tweet.split()
+     #String#downcase
+    #Array#join
+    #Array#inject
+    words = tweeted_text.downcase.gsub(/#/,'').split(/\s+/)
+    title = Category.limit(30).map(&:title)
+    words.inject([]) do |collector, word|
+      match = categories.detect {|c|c.title_match?(word)}
+      collector << match.title if match
+      collector
+     end.sort.join(',')
      #titles = Category.all.map(&:title).map(&:downcase)
-     #titles.include?(word)
-
+    #titles.include?(word)
+    #Category.all.map(&:title)
+    #is short for..
+    #Category.all.map do |x|
+    # x.title
+    #end
 
   end
 end
