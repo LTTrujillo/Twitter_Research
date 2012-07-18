@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create! do |user|
+  user.full_name             = 'Logan Trujillo'
+  user.email                 = 'sublime7767@yahoo.com'
+  user.password              = 'foobar'
+  user.password_confirmation = 'foobar'
+end
+
+Category.create!(title: 'Business')
+Category.create!(title: 'Personal')
+Category.create!(title: 'Lady Gaga')
+Category.create!(title: 'Short Pants')
+Category.create!(title: 'Artest')
