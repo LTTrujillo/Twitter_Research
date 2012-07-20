@@ -3,7 +3,10 @@ class Category < ActiveRecord::Base
   validates(:title, :presence => true, uniqueness: true)
   has_and_belongs_to_many(:tweets)
 end
+def self.with_title (title)
+  where('LOWER(title)=?',title.downcase)
+end
 
-def title_match
- title.downcase == other.downcase
+def title_match (other)
+  title.downcase == other.downcase
 end
