@@ -14,3 +14,10 @@ class CreateCategories < ActiveRecord::Migration
     add_index(:categories_tweets, :tweet_id)
   end
 end
+
+
+
+
+
+
+
