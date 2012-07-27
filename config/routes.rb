@@ -3,10 +3,12 @@ TwitterResearch::Application.routes.draw do
   devise_for :users
 
   root(:to => 'searches#index')
+  resources(:categories)
   resources(:searches)
   resources(:tweets) do
     resources(:notes)
   end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
