@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
 
   def index #show a list of all categories
     @categories = Category.order(:title).limit(50)
-    respond_with(@category)
+    respond_with(@categories)
   end
 
   def show #show a single category with all of it's tweets'
@@ -18,7 +18,7 @@ class CategoriesController < ApplicationController
 
   def create #actually create the category
     @category = Category.create(params[:category])
-    repsond_with(@category)
+    respond_with(@category, location: categories_url)
   end
 
   def edit #show a form to let a user edit a category
