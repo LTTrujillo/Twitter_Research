@@ -8,6 +8,15 @@
   </head>
   <body>
     <nav>
+      <% if !flash.empty? %>
+        <div>
+          <p><%= flash.notice %></p>
+          <p><%= flash.alert %></p>
+        </div>
+      <% end %>
+
+
+
       <ul>
         <li><%= link_to(('Search'), searches_url) %></li>
         <li><%= link_to(('My Saved Tweets'), tweets_url) %></li>
@@ -16,6 +25,6 @@
     </nav>
     <div id="content">
       <%= yield %>
-     </div>
+    </div>
   </body>
 </html>
