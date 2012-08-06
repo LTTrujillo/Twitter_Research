@@ -18,8 +18,8 @@ class CategoriesController < ApplicationController
 
   def create #actually create the category
     @category = Category.create(params[:category])
-    flash.notice "You created a category" if !category
-    respond_with(@category)
+    flash.notice "You created a category" if !category.new_record?
+    respond_with(@category, location: categories_url)
   end
 
   def edit #show a form to let a user edit a category
