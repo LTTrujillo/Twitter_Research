@@ -1,3 +1,86 @@
 // Place all the styles related to the searches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ div.search-form{
+  vertical-align: center;
+  horizontal-align: center;
+  padding: 60px;
+  margin-top: 10px;
+}
+
+/* "Coders" image */
+img.displayed{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* results page */
+span#searched-for{
+  color: #FA055F;
+}
+
+p#message{
+  font: 36px Verdana, Arial;
+  font-weight: strong;
+  text-align: center;
+  padding: 0 0 0px 0;
+  margin-top: 72px
+}
+
+div.all-results{
+  margin-top: 76px;
+}
+
+div.results{
+  overflow: hidden;
+  vertical-align: middle;
+  border: 2px ridge #009966;
+  border-radius: 12px;
+  -moz-box-shadow: 8px 8px 8px 0px #424445;
+  -webkit-box-shadow: 8px 8px 8px 0px #424445;
+  box-shadow: 8px 8px 8px 0px #424445;
+  padding: 12px;
+  margin-bottom: 14px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #CAEDDD;
+}
+
+div.avatar{
+  height: 48px;
+  width: 48px;
+  float: left;
+  vertical-align: middle;
+  border: 2px ridge #CAC8CF;
+  border-radius: 4px;
+  -moz-box-shadow: 6px 6px 5px 0 #12383D;
+  -webkit-box-shadow: 6px 6px 5px #12383D;
+  box-shadow: 6px 6px 5px 0 #12383D;
+}
+
+div.tweeted-text{
+  vertical-align: middle;
+  padding-left: 10px;
+  margin-left: 57px;
+  position: relative;
+  color: #000000;
+}
+
+span.meta{
+  color: #2FC3D6;
+}
+
+div.save-button{
+  vertical-align: middle;
+  horizontal-align: middle;
+  border: 1px solid #4781ED;
+  border-radius: 6px;
+  -moz-box-shadow: 6px 6px 5px 0 #12383D;
+  -webkit-box-shadow: 6px 6px 5px 0 #12383D;
+  box-shadow: 6px 6px 5px 0 #12383D;
+  width: 56px;
+  height: 25px;
+  float: right;
+}

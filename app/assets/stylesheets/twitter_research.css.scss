@@ -1,36 +1,109 @@
-tb5 {
-	background: url(images/rounded.gif) no-repeat top left;
-	height: 22px;
-	width: 230px;
-}
-.tb5a {
-	border: 0;
-	width:220px;
-	margin-top:3px;
-}
-
-
-
-nav ul {
-  font-size: 20px;
+.navigation{
+  float: left;
+  font-size: 16px;
   list-style-type: none;
-  margin-bottom: 15px;
-
-  li {
-
-    padding-right: 0px;
-
-
-  }
+  margin: 0 0 20px 36px;
+  width: 500px;
+  height: 100px;
+  border: 1px solid #009966;
+  -moz-border-radius: 290px / 60px;
+  -webkit-border-radius: 290px / 60px;
+  border-radius: 290px / 60px;
+  background-color: lightblue;
+  /* overflow: hidden; */
+  -moz-box-shadow: 8px 8px 8px 0px #424445;
+  -webkit-box-shadow: 8px 8px 8px 0px #424445;
+  margin-top: 60px;
 }
 
-#content { width: 750px;
-         }
+nav li{
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 0 0 10px;
+}
 
-body {background-image: url(http://4.bp.blogspot.com/-5pIWh-WI6NU/T2ia9bGYb7I/AAAAAAAAAPA/TrmZZDumYCs/s1600/twitter-backgrounds%2B%252811%2529.jpg);
-      color: lightgrey;
-      text-indent: 70px;
+li a:link{
+  color: lightblue;
+  font-weight: bold;
+  margin-top: 40px;
+}
 
-     }
+body{
+  margin:0px 0px;
+  padding:22px 100px 0px 100px;
+  background-image: url(http://4.bp.blogspot.com/-5pIWh-WI6NU/T2ia9bGYb7I/AAAAAAAAAPA/TrmZZDumYCs/s1600/twitter-backgrounds%2B%252811%2529.jpg);
+  background-repeat: repeat;
+  color: lightblue;
+}
+ div.non_search{
+  padding: 30px 40px 40px 40px;
+  margin: 100px 80px 40px 80px;
+  background-color: lightblue;
+  border: 3px ridge #009966;
+  border-radius: 36px;
+  /* -moz-box-shadow: 8px 8px 8px 0px #424445; */
+  /* -webkit-box-shadow: 8px 8px 8px 0px #424445; */
+  background: rgb(42, 146, 232) transparent; /* default fallback */
+  background: rgba(42, 146, 232, 0.6); /* nice browsers */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,
+                                                    endColorstr=#CCFFFFFF); /* IE 6/7 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,
+   endColorstr=#CCFFFFFF)"; /* IE8 */
+}
 
+h2{
+  text-align: center;
+  width: 300px;
+  margin: 0px auto;
+  margin-bottom: 8px;
+  color: lightblue;
+}
 
+h3{
+  text-align: center;
+  width: 300px;
+  margin: 0px auto;
+  margin-top: 12px;
+  color: lightblue;
+}
+
+p.cancel{
+  width: 300px;
+  margin: 0px auto;
+  text-align: center;
+}
+form#new_user{
+  width: 300px;
+  margin: 0px auto;
+}
+
+form#edit_user{
+  width: 300px;
+  margin: 0px auto;
+  padding-left: 28px;
+}
+
+div.shared_links{
+  width: 300px;
+  margin: 0px auto;
+}
+
+div#back{
+  width: 300px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* pages after log-in */
+
+div.backboard{
+  padding: 30px 40px 40px 40px;
+  margin: 100px 80px 40px 80px;
+  background-color: lightblue;
+  border: 3px ridge #009966;
+  border-radius: 36px;
+  -moz-box-shadow: 8px 8px 8px 0px #424445;
+  -webkit-box-shadow: 8px 8px 8px 0px #424445;
+  box-shadow: 8px 8px 8px 0px #424445;
+}
