@@ -1,3 +1,49 @@
 // Place all the styles related to the Tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+holder {
+
+  height:auto;
+  width:250px;
+  margin-bottom:25px;
+
+ }
+
+
+ .holder p {
+
+  border-left:1px solid #333;
+  border-right:1px solid #333;
+  padding:10px 15px;
+  margin:0;
+
+ }
+
+ .top {
+
+  width:248px;
+  height:30px;
+  border: 1px solid #333;
+  background:#ccc;
+
+ }
+
+ .top h3 {
+
+  margin:0;
+  line-height:30px;
+  padding:0px 10px;
+  font-family:Tahoma, Geneva, sans-serif;
+  font-size:15px;
+
+ }
+
+ .bottom {
+
+  width:248px;
+  height:10px;
+  border-bottom: 1px solid #333;
+  border-left:1px solid #333;
+  border-right:1px solid #333;
+
+ }

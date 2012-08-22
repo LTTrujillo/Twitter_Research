@@ -1,12 +1,36 @@
+tb5 {
+	background: url(images/rounded.gif) no-repeat top left;
+	height: 22px;
+	width: 230px;
+}
+.tb5a {
+	border: 0;
+	width:220px;
+	margin-top:3px;
+}
+
+
+
 nav ul {
-  font-size: 22px;
+  font-size: 20px;
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+
   li {
-    display: inline;
-    padding-right: 8px;
+
+    padding-right: 0px;
+
+
   }
 }
 
-#content { width: 800px;
+#content { width: 750px;
          }
+
+body {background-image: url(http://4.bp.blogspot.com/-5pIWh-WI6NU/T2ia9bGYb7I/AAAAAAAAAPA/TrmZZDumYCs/s1600/twitter-backgrounds%2B%252811%2529.jpg);
+      color: lightgrey;
+      text-indent: 70px;
+
+     }
+
+
